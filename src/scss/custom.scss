@@ -5,7 +5,94 @@
 @import "partials/base";
 
 // global
-
+.nav-header{
+	height: 65px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	width: 100%;
+	background: #2a3e51;
+	.container{
+		height: 100%;
+		border-bottom: 1px solid;
+		border-bottom-color: rgba(255,255,255,0.4);
+		.navbar-header{
+			height: 100%;
+			a.navbar-brand{
+				height: 100%;
+				padding: 0px 15px;
+				img{
+					height: 65px;
+					width: auto;
+					display: inline-block;
+				}
+				h2{
+					display: inline-block;
+					margin-top: 0;
+					margin-bottom: 0;
+					font-size: 16px;
+					color: #ffffe0;
+					font-weight: 500;
+					padding-left: 20px;
+				}
+			}
+			.navbar-toggle{
+				margin-top: 15px;
+			}
+		}
+		.navbar-collapse{
+			ul.navbar-right{
+				li{
+					background: #3f5163;
+					a{
+						padding: 22px 20px;
+						color: $white;
+						&:hover{
+							color: darken($white, 20%);
+						}
+					}
+					&.active{
+						a{
+							color: $main;
+							background-color: #ffffff;
+						}
+					}
+				}
+			}
+			&.in{
+				ul.navbar-right{
+					
+				}
+			}
+		}
+	}
+}
+.spnk-login{
+	background: #2a3e51;
+	height: 100%;
+	.snpk-login-container{
+		text-align: center;
+		padding-top: 50px;
+		img{
+			height: 150px;
+			width: auto;
+		}
+		h2{
+			color: #ffffe0;
+			text-align: center;
+			font-weight: 300;
+			font-size: 20px;
+			margin-bottom: 50px;
+			margin-top: 0;
+			line-height: normal;
+		}
+		.snpk-login-form{
+			background: rgba(255,255,255, .3);
+			border-radius: 10px;
+			padding: 30px;
+		}
+	}
+}
 
 // responsive content
 @media (max-width: $screen-xs-max){ 
